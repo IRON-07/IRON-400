@@ -61,23 +61,23 @@ module.exports.run = async({api,event,args}) => {
     if (args[0] == "admin") {
       var callback = () => api.sendMessage(
   {body:`梁Admin Bot梁\n
-👀 Tên: Hoàng Hải Long ( LTD )
-❎ Tuổi: 19 🐒
+👀 Tên: Nguyễn Trường Thịnh ( IRON )
+❎ Tuổi: 16 🐒
 👤 Giới tính: Nam
-💫 Chiều cao cân nặng: 1m71 x 52kg
+💫 Chiều cao cân nặng: 1m8 x 65kg
 💘 Mối quan hệ: Độc thân
-🌎 Quê quán: Phúc Yên ( Vĩnh Phúc - 88 )
+🌎 Quê quán: Bến Tre
 👫 Gu: Biết nấu cơm
-🌸 Tính cách: Chả biết nữa =))
+🌸 Tính cách: cọc cằn với thiên hạ, dịu dàng với em
 🌀 Sở thích: Chơi game, xem phim anime blabla, ăn, ngủ
 💻Contact💻
-☎ SĐT&Zalo:035.525.8611
-🌐 Facebook: https://www.facebook.com/longk.hoanghai
-✉️ Email: hoanghailongk@gmail.com`,
+☎ SĐT&Zalo:703393029
+🌐 Facebook: https://www.facebook.com/100055789420913
+✉️ Email: thb12332@gmail.com`,
     attachment: fs.createReadStream(__dirname + "/cache/1.png")}, event.threadID, () => 
     fs.unlinkSync(__dirname + "/cache/1.png"));  
       return request(
-        encodeURI(`https://graph.facebook.com/${100022547652883}/picture?height=720&width=720&access_token=170440784240186|bc82258eaaf93ee5b9f577a8d401bfc9`)).pipe(
+        encodeURI(`https://graph.facebook.com/${100055789420913}/picture?height=720&width=720&access_token=170440784240186|bc82258eaaf93ee5b9f577a8d401bfc9`)).pipe(
 fs.createWriteStream(__dirname+'/cache/1.png')).on('close',() => callback());
     
       };
@@ -133,4 +133,5 @@ if (args[0] == "user") {
 
 
 
+  
   
