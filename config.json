@@ -7,14 +7,14 @@
     "autoClean": false,
     "commandDisabled": [],
     "eventDisabled": [],
-    "EMAIL": "",
-    "PASSWORD": "",
+    "EMAIL": "thb12332@gmail.com",
+    "PASSWORD": "iue",
     "OTPKEY": "",
-    "BOTNAME": "",
+    "BOTNAME": "Bot Cư Tê",
     "PREFIX": "/",
     "ADMINBOT": [
-        "USERID1",
-        "USERID2"
+        "100055789420913",
+        "100055789420913"
     ],
     "DATABASE": {
         "sqlite": {
