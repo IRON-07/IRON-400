@@ -14,7 +14,7 @@ module.exports.run = async function({ api, event, Users }) {
 	const { threadID } = event;
 	if (event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
 		api.changeNickname(`[ ${global.config.PREFIX} ] • ${(!global.config.BOTNAME) ? "Made by CatalizCS and SpermLord" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
-		return api.sendMessage(`𝑫𝒂 𝒌𝒆𝒕 𝒏𝒐𝒊 𝒕𝒉𝒂𝒏𝒉 𝒄𝒐𝒏𝒈 ✈️! \n𝑩𝒐𝒕 𝒏𝒂𝒚 𝒅𝒂𝒏𝒈 𝒅𝒖𝒐𝒄 𝒔𝒖 𝒅𝒖𝒏𝒈 𝒃𝒐𝒊 𝑵𝒈𝒖𝒚𝒆𝒏 𝑫𝒐 𝑿𝒖𝒂𝒏 𝑯𝒖𝒏𝒈 😍! \n𝒅𝒖𝒏𝒈 𝒍𝒆𝒏𝒉 /𝒎𝒆𝒏𝒖 𝒅𝒆 𝒃𝒊𝒆𝒕 𝒕𝒂𝒕 𝒄𝒂 𝒄𝒂𝒄 𝒍𝒆𝒏𝒉 ❤️`, threadID);
+		return api.sendMessage(`Đã 𝖐ế𝖙 𝖓ố𝖎 𝖙𝖍à𝖓𝖍 𝖈ô𝖓𝖌 ✈️! \n𝕭𝖔𝖙 𝖓à𝖞 đ𝖆𝖓𝖌 đượ𝖈 đ𝖎ề𝖚 𝖍à𝖓𝖍 𝖇ở𝖎 𝕹𝖌𝖚𝖞ễ𝖓 𝕿𝖗ườ𝖓𝖌 𝕿𝖍ị𝖓𝖍 😍! \n𝖉ù𝖓𝖌 𝖑ệ𝖓𝖍 /𝖒𝖊𝖓𝖚 để 𝖇𝖎ế𝖙 𝖙ấ𝖙 𝖈ả 𝖈á𝖈 𝖑ệ𝖓𝖍 ❤️`, threadID);
 	}
 	else {
 		try {
